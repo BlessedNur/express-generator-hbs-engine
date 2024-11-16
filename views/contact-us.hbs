@@ -1,0 +1,18 @@
+<h1 class="contact-title">{{title}}</h1>
+<p class="contact-welcome">Welcome to {{title}}.</p>
+
+{{#if message}}
+  <h1>{{message}}</h1>
+{{/if}}
+<form action="/submit-form" method="post" class="contact-form">
+  <input type="text" name="name" placeholder="Name" required />
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="text" name="subject" placeholder="Subject" required />
+  <textarea
+    name="content"
+    placeholder="Write your message here..."
+    rows="5"
+    required
+  ></textarea>
+  <button type="submit" class="btn-submit">Send</button>
+</form>

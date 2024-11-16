@@ -1,0 +1,97 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: crimson;
+  border-radius: 10px;
+}
+
+header h1 {
+  margin: 0;
+  color: #ffffff;
+}
+
+header nav a {
+  margin: 0 10px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* Container */
+.contact-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title */
+.contact-title {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: crimson;
+}
+
+/* Welcome text */
+.contact-welcome {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: crimson;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Button */
+.btn-submit {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: white;
+  background-color: crimson;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: rgba(220, 20, 60, 0.681);
+}
